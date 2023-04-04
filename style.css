@@ -1,0 +1,175 @@
+body {
+background: linear-gradient(to bottom right, #d0e1f9, #ffffff);
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+header {
+background-color: #065d9b;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+main {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: white;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+border-radius: 5px;
+text-align: center;
+}
+
+footer {
+background-color: #eee;
+padding: 20px;
+text-align: center;
+font-size: 14px;
+color: #444;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+form {
+display: inline-block;
+text-align: left;
+}
+
+fieldset {
+margin-bottom: 20px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+text-align: left;
+background-color: #f9f9f9;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: #444;
+}
+
+input[type="text"] {
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+font-size: 16px;
+color: #444;
+}
+
+input[readonly] {
+background-color: #eee;
+}
+
+button[type="button"] {
+background-color: #065d9b;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+button[type="button"]:hover {
+background-color: #043b5d;
+}
+
+#info-button {
+background-color: #eee;
+color: #444;
+border: none;
+padding: 5px 10px;
+font-size: 14px;
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 20px;
+}
+
+#info-box {
+display: none;
+position: absolute;
+top: 50px;
+right: 20px;
+background-color: white;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+border-radius: 5px;
+text-align: left;
+max-width: 300px;
+z-index: 1;
+}
+
+#info-box h2 {
+margin-top: 0;
+font-size: 18px;
+color: #065d9b;
+}
+
+#info-box p {
+margin-top: 10px;
+font-size: 14px;
+color: #444;
+line-height: 1.5;
+}
+
+#info-box button[type="button"] {
+background-color: #065d9b;
+color: white;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+font-size: 14px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+#info-box button[type="button"]:hover {
+background-color: #043b5d;
+}
+@media screen and (max-width: 1126px) {
+main {
+padding: 10px;
+}
+
+fieldset {
+padding: 10px;
+}
+
+label {
+font-size: 14px;
+}
+
+input[type="text"] {
+width: 90%;
+font-size: 16px;
+padding: 5px;
+}
+
+button[type="button"] {
+padding: 5px 10px;
+font-size: 14px;
+}
+
+#info-button {
+top: 10px;
+right: 10px;
+font-size: 12px;
+}
+
+#info-box {
+top: 40px;
+right: 10px;
+font-size: 14px;
+max-width: 200px;
+}
+}

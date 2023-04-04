@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Odontometria - mobile</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Odontometria - mobile</h1>
+	</header>
+	<main>
+		<form>
+			<fieldset>
+				<legend>Informações sobre o dente</legend>
+
+				<label for="cad">CAD :</label>
+				<input type="text" id="cad" name="cad" required="">
+
+				<label for="x">X :</label>
+				<input type="text" id="x" name="x" required="">
+			</fieldset>
+
+			<fieldset>
+				<legend>Resultados</legend>
+
+				<label for="ctex">CTEX :</label>
+				<input type="text" id="ctex" name="ctex" readonly="">
+
+				<label for="ctxs">CTSX :</label>
+				<input type="text" id="ctxs" name="ctxs" readonly="">
+
+				<label for="crd">CRD :</label>
+				<input type="text" id="crd" name="crd" readonly="">
+
+				<label for="ct">CT :</label>
+				<input type="text" id="ct" name="ct" readonly="">
+			</fieldset>
+
+			<button type="button" onclick="calcular()">Calcular</button>
+		</form>
+
+		<div id="info-box">
+			<h2>Fórmulas:</h2>
+			<p>CTEX = CAD - 2</p>
+			<p>CTSX = CAD - 5</p>
+			<p>CRD = CTEX + X</p>
+			<p>CT = CRD - 1</p>
+			<button type="button" onclick="hideInfoBox()">Fechar</button>
+		</div>
+		<button id="info-button" type="button" onclick="showInfoBox()">Fórmulas</button>
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
+  <footer>
+		<p>Autora: Lorena Leveck Guimarães - CRO XXX-XXX - lorenaguimaraes23@hotmail.com - Curitiba, Paraná</p>
+	</footer>
+</html>
